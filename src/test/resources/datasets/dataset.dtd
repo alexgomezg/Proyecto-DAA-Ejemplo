@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT dataset (people*,users*,pets*)>
+<!ELEMENT people EMPTY>
+<!ELEMENT users EMPTY>
+<!ELEMENT pets EMPTY>
+<!ATTLIST people
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    surname CDATA #IMPLIED
+>
+<!ATTLIST users
+    login CDATA #IMPLIED
+    password CDATA #IMPLIED
+    role CDATA #IMPLIED
+>
+<!ATTLIST pets
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    type CDATA #IMPLIED
+    peopleID CDATA #IMPLIED
+>
